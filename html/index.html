@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forest</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+	<script src="libs/rain.js" defer></script>
+</head>
+<body>
+
+	<div class="logo" style="background-image: url(img/logo.svg);"></div>
+
+	<section class="layers">
+		<div class="layers__container">
+			<div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
+			<div class="layers__item layer-2" style="background-image: url(img/layer-2.png);"></div>
+			<div class="layers__item layer-3">
+				<div class="hero-content">
+					<h1 class="title">Natural Forest <span>Escape</span></h1>
+					<div class="hero-content__p hero-content__p-first">Amaizing 3D site with a captivating ‘lens effect’</div>
+					<div class="hero-content__p hero-content__p-second">In the heart of the mystical forest 🌲, a gentle rain paints a delicate symphony. Verdant hues glisten under the soft
+					touch of raindrops, creating a dance of nature's own choreography. 🍃 Earthy fragrances blend with the petrichor of
+					dampened soil, weaving a sensory masterpiece. The air is alive with the soothing rhythm of raindrops on leaves, and the
+					ancient trees stand tall, embracing the serene melody. This enchanted realm, where the forest whispers secrets and
+					raindrops tell stories, invites wanderers to lose themselves in its tranquil embrace.
+				
+					<br>
+					<br>
+					<small style="font-size: 14px; color: coral;">
+						the project is still being developed
+					</small>
+				</div>
+					<button class="button-start">Start Zoom</button>
+				</div>
+			</div>
+			<div class="layers__item layer-4">
+				<canvas id="canvas" class="rain"></canvas>
+			</div>
+			<div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
+			<div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div>
+		</div>
+	</section>
+
+
+	<audio class="sound" style="position: absolute; visibility: hidden; z-index: -10;" autoplay loop>
+		<!-- <source src="horse.ogg" type="audio/ogg"> -->
+		<source src="files/sound.mp3" type="audio/mpeg">
+	</audio>
+
+</body>
+</html>
