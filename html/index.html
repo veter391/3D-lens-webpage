@@ -11,6 +11,10 @@
 	<script src="libs/rain.js" defer></script>
 </head>
 <body>
+	<button class="play">
+		<img class="playImg" src="img/play.svg" alt="play">
+		<img class="pauseImg" src="img/pause.svg" alt="pause">
+	</button>
 
 	<div class="logo" style="background-image: url(img/logo.svg);"></div>
 
@@ -34,7 +38,7 @@
 						the project is still being developed
 					</small>
 				</div>
-					<button class="button-start">Start Zoom</button>
+					<button class="button-start">Start Escape</button>
 				</div>
 			</div>
 			<div class="layers__item layer-4">
@@ -44,9 +48,8 @@
 			<div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div>
 		</div>
 	</section>
-
-	<iframe src="sound.mp3" allow="autoplay loop" id="audio" style="display: none"></iframe>
-	<audio class="sound" style="position: absolute; visibility: hidden; z-index: -10;" autoplay loop>
+	
+	<audio id="playAudio" class="sound" autoplay loop>
 		<!-- <source src="horse.ogg" type="audio/ogg"> -->
 		<source src="sound.mp3" type="audio/mpeg">
 	</audio>

@@ -8,10 +8,20 @@ window.addEventListener('DOMContentLoaded', () => {
 			`
 		})
 	})
-	
+
 	const btn = document.querySelector('.button-start')
-	
-	
+
+	const play = document.querySelector('.play')
+
+	play.addEventListener('click', () => {
+		play.classList.toggle('active')
+		if(play.classList.contains('active')) {
+			document.querySelector('.sound').play()
+		} else {
+			document.querySelector('.sound').pause()
+		}
+	})
+
 	// fade and unfade in vanilla js
 	function fade(element, timeout, display = 'block') {
 		element.style.opacity = 0;
@@ -42,7 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			document.querySelector('.layer-1').style.transition = 'transform .7s ease-in'
 			unfade(document.querySelector('.title'), 0)
 			fade(document.querySelector('.hero-content__p-second'), 2300)
-	
 		} else {
 			document.querySelector('.layer-2').style.transform = 'translateZ(80px) rotate(20deg)'
 			document.querySelector('.layer-1').style.transform = 'translateZ(-55px) scale(1.09)'
@@ -50,7 +59,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			document.querySelector('.layer-1').style.transition = 'transform .5s ease-in'
 			fade(document.querySelector('.title'), 2000)
 			unfade(document.querySelector('.hero-content__p-second'), 0)
-	
 		}
 	})
 })

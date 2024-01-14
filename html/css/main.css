@@ -125,3 +125,39 @@ body {
 	display: none;
 	line-height: 2;
 }
+
+.play {
+	bottom: 20px;
+	left: 20px;
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	width: 50px;
+	height: 50px;
+	z-index: 10;
+	transition: opacity .3s ease-in;
+	opacity: .4;
+	cursor: pointer;
+}
+
+.play:hover {
+	opacity: .7;
+}
+
+.playImg, .pauseImg {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.play .pauseImg {
+	display: none;
+}
+.play.active {
+	opacity: .02;
+}
+.play.active .pauseImg {
+	display: block;
+}
+.play.active .playImg {
+	display: none;
+}
